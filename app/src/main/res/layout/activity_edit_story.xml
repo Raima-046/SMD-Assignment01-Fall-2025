@@ -47,40 +47,67 @@
 
 
                 <LinearLayout
-                    android:id="@+id/prog_bar"
-                    android:layout_width="match_parent"
-                    android:layout_height="4dp"
-                    android:layout_weight="1"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:weightSum="100">
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="80"
-                        android:background="#FFFFFF" />
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="20"
-                        android:background="@color/story_prog" />
-
-                </LinearLayout>
-
-
-                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:layout_below="@id/prog_bar"
                     android:weightSum="8"
                     android:orientation="horizontal"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     >
-                    
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/close"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/partner"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/text_round"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/stickers_round"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/muse"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/filters"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/more_opts"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/close"
+                        />
+
                 </LinearLayout>
 
             </RelativeLayout>
@@ -92,150 +119,53 @@
         <LinearLayout
             android:id="@+id/bnav"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:orientation="horizontal"
             android:weightSum="7"
             android:layout_above="@id/bbar"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
             >
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1.4"
-                android:orientation="vertical"
-                android:weightSum="4"
+                android:layout_weight="2.9"
                 >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2.5"
-                    android:src="@drawable/img_9wbg"
-                    android:backgroundTint="@color/black"
-                    />
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Activity"
-                    android:textColor="@color/white"
-                    android:gravity="center|top"
-                    />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                >
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:weightSum="4"
-                android:orientation="vertical"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2.5"
-                    android:src="@drawable/reels"
-                    app:tint="@color/follow_btn"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/msg_bar"
                     android:padding="10dp"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Create"
-                    android:textColor="@color/white"
-                    android:gravity="center|top"
+                    android:backgroundTint="@color/from"
                     />
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:weightSum="4"
-                android:orientation="vertical"
+                android:layout_weight="2.9"
+                >
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
                 >
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2.5"
-                    android:src="@drawable/fb"
-                    app:tint="@color/follow_btn"
-                    android:padding="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/follow_btn"
+                    android:src="@drawable/nexty"
+                    android:scaleType="center"
                     />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Facebook"
-                    android:textColor="@color/white"
-                    android:gravity="center|top"
-                    />
+            </RelativeLayout>
 
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1.2"
-                android:weightSum="4"
-                android:orientation="vertical"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2.5"
-                    android:src="@drawable/hl_str"
-                    app:tint="@color/follow_btn"
-                    android:padding="8dp"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Send"
-                    android:textColor="@color/white"
-                    android:gravity="center|top"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:weightSum="4"
-                android:orientation="vertical"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2.5"
-                    android:src="@drawable/more"
-                    app:tint="@color/follow_btn"
-                    android:padding="10dp"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="More"
-                    android:textColor="@color/white"
-                    android:gravity="center|top"
-                    />
-
-            </LinearLayout>
 
         </LinearLayout>
 
