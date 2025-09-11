@@ -383,12 +383,14 @@
                 android:orientation="horizontal"
                 >
                 <TextView
+                    android:id="@+id/fol"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Follow"
                     android:textStyle="bold"
                     android:textColor="@color/white"
                     android:gravity="center_vertical|center"
+                    android:clickable="true"
                     />
             </LinearLayout>
 

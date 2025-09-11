@@ -12,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment01">
         <activity
+            android:name=".EditStory"
+            android:exported="false" />
+        <activity
+            android:name=".Highlight"
+            android:exported="false" />
+        <activity
             android:name=".Followed"
+            android:exported="false" />
+        <activity
+            android:name=".Follow"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -45,7 +54,7 @@
             android:name=".Createacc"
             android:exported="false" />
         <activity
-            android:name=".Follow"
+            android:name=".LikedStory"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

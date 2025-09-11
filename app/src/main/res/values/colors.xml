@@ -15,4 +15,6 @@
     <color name="outline">#c6ccc8</color>
     <color name="follow">#f8f8f8</color>
     <color name="follow_btn">#ad805f</color>
+    <color name="story_prog">#CB565454</color>
+
 </resources>
