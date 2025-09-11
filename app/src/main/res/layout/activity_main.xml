@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/sbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/status_bar"
+        android:layout_alignParentTop="true"
+        >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/slogo"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/socially_logo"
+        android:layout_centerInParent="true"
+        android:layout_margin="25dp"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/red_hat"
+        android:text="SMD"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_above="@+id/bbar"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="35dp"
+        android:textColor="@color/theme"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="from"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-13dp"
+        android:layout_above="@+id/tt1"
+        android:textColor="@color/from"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/bbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:elevation="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bottom_bar">
+
+    </ImageView>
+
+
+</RelativeLayout>

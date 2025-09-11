@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="theme">#8f3f42</color>
+    <color name="from">#7A8A8F</color>
+    <color name="createacc">#c6aca5</color>
+    <color name="loginClicked">#9a5a5b</color>
+    <color name="loginUnClicked">#d19f9e</color>
+    <color name="msgbar">#f3f3f3</color>
+    <color name="call">#f90405</color>
+    <color name="search">#1087d9</color>
+    <color name="bg">#fafafa</color>
+    <color name="outline">#c6ccc8</color>
+    <color name="follow">#f8f8f8</color>
+    <color name="follow_btn">#ad805f</color>
+</resources>

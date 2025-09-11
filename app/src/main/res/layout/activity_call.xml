@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Call">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/call_img"
+
+            >
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img"
+                android:background="@drawable/call_img"
+                android:clipToOutline="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mother ❤"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_below="@id/rl1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03:12"
+            android:textSize="23dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/mom"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="13dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/callr"
+                android:scaleType="fitEnd"
+                android:padding="28dp"
+                />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/call_img"
+                    app:tint="@color/call"
+                    android:layout_margin="10dp"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/fone"
+                    android:rotation="135"
+                    android:scaleType="center"
+                    />
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/vol"
+                app:tint="@color/white"
+                android:scaleType="fitStart"
+                android:padding="25dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dms">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/sbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/status_bar"
+            android:layout_alignParentTop="true"
+            >
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/sbar"
+            android:weightSum="6"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:src="@drawable/backb"
+                android:scaleType="centerInside"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7"
+                android:text="jacob_w"
+                android:gravity="center_vertical|end"
+                android:textColor="@color/theme"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:src="@drawable/backb"
+                android:rotation="270"
+                android:textAlignment="textStart"
+                android:scaleType="centerInside"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:src="@drawable/plus"
+                android:scaleType="centerInside"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/ll1"
+            android:orientation="horizontal"
+            android:layout_margin="7dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rect_button"
+                android:backgroundTint="@color/msgbar"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:src="@drawable/search"
+                        android:scaleType="center"
+                        />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.2"
+                        android:hint="Search"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/black"
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll2"
+            android:layout_above="@id/ll4"
+            android:orientation="vertical"
+            android:weightSum="7"
+            >
+
+            <LinearLayout
+                android:id="@+id/dm1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="5"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/seen_str"
+                        android:scaleType="center"
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/joshua"
+                        android:padding="7dp"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.9"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="joshua_I"
+                        android:textSize="14sp"
+                        android:gravity="bottom"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="Have a nice day, bro!"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text=". now"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/camb"
+                    android:scaleType="centerInside"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/karenn"
+                        android:padding="7dp"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.9"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="karennne"
+                        android:textSize="14sp"
+                        android:gravity="bottom"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="I heard this is a good movie, s..."
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text=". now"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/camb"
+                    android:scaleType="centerInside"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/martini"
+                        android:padding="7dp"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.9"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="martini_rond"
+                        android:textSize="14sp"
+                        android:gravity="bottom"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="See you on the next meeting!"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text=". 15m"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/camb"
+                    android:scaleType="centerInside"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/seen_str"
+                        android:scaleType="center"
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/andr"
+                        android:padding="7dp"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.9"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="andrewww_"
+                        android:textSize="14sp"
+                        android:gravity="bottom"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="Sounds good 😂😂😂"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text=". 20m"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/camb"
+                    android:scaleType="centerInside"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/seen_str"
+                        android:scaleType="center"
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/kiero"
+                        android:padding="7dp"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.9"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="kiero_d"
+                        android:textSize="14sp"
+                        android:gravity="bottom"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="The new design looks cool, b..."
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text=". 1m"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/camb"
+                    android:scaleType="centerInside"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/seen_str"
+                        android:scaleType="center"
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/max"
+                        android:padding="7dp"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.9"
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="maxjacobson"
+                        android:textSize="14sp"
+                        android:gravity="bottom"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="Thank you, bro!"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text=". 2h"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/camb"
+                    android:scaleType="centerInside"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_above="@id/bbar"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:src="@drawable/fcam"
+                android:scaleType="centerInside"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:text="Camera"
+                android:layout_marginLeft="9dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:elevation="40dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bottom_bar"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

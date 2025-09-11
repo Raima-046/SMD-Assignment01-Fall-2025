@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    tools:context=".Createacc">
+
+    <ImageView
+        android:id="@+id/sbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/status_bar"
+        android:layout_alignParentTop="true"
+        >
+    </ImageView>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/sbar"
+        android:src="@drawable/next"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:rotation="180"
+        android:clickable="true"
+        >
+    </ImageView>
+    <TextView
+        android:id="@+id/tt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Socially"
+        android:textSize="40dp"
+        android:fontFamily="@font/red_hat"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/sbar"
+        android:textColor="@color/white"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/tt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create An Account and Sign Up"
+        android:textColor="@color/white"
+        android:fontFamily="@font/red_hat"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tt1"
+        android:layout_marginTop="-3dp"
+        >
+    </TextView>
+    <ImageView
+        android:id="@+id/cimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tt2"
+        android:layout_marginTop="7dp"
+        >
+    </ImageView>
+    <ImageView
+        android:id="@+id/cam"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/camera"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tt2"
+        android:layout_marginTop="32dp"
+        >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="405dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cimg"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/createacc"
+                android:textSize="16sp"
+                android:layout_marginLeft="17dp"
+               android:gravity="center_vertical" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="tejpatil064"
+                android:textColorHint="@color/createacc"
+                android:textColor="@color/createacc"
+                android:backgroundTint="@color/createacc"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            android:textColor="@color/createacc"
+            android:textSize="16sp"
+            android:layout_marginLeft="17dp"
+            android:gravity="center_vertical" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tejas"
+                android:textColorHint="@color/createacc"
+                android:textColor="@color/createacc"
+                android:backgroundTint="@color/createacc"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Last Name"
+                android:textColor="@color/createacc"
+                android:textSize="16sp"
+                android:layout_marginLeft="17dp"
+                android:gravity="center_vertical" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Patil"
+                android:textColorHint="@color/createacc"
+                android:textColor="@color/createacc"
+                android:backgroundTint="@color/createacc"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textColor="@color/createacc"
+                android:textSize="16sp"
+                android:layout_marginLeft="17dp"
+                android:gravity="center_vertical" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="02 - 09 - 2003"
+                android:textColorHint="@color/createacc"
+                android:textColor="@color/createacc"
+                android:backgroundTint="@color/createacc"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textColor="@color/createacc"
+                android:textSize="16sp"
+                android:layout_marginLeft="17dp"
+                android:gravity="center_vertical" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter E-mail"
+                android:textColorHint="@color/createacc"
+                android:textColor="@color/createacc"
+                android:backgroundTint="@color/createacc"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/createacc"
+                android:textSize="16sp"
+                android:layout_marginLeft="17dp"
+                android:gravity="center_vertical" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="******"
+                    android:textColorHint="@color/createacc"
+                    android:textColor="@color/createacc"
+                    android:backgroundTint="@color/createacc"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/eye"
+                    android:tint="@color/white"
+                    android:layout_margin="10dp"
+                    android:elevation="15dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rect_button"
+                android:text="Create an Account"
+                android:textColor="@color/createacc"
+                android:gravity="center_vertical|center"
+                android:textSize="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/bottom_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bottom_bar2"
+                android:layout_marginTop="12dp"
+                android:elevation="50dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

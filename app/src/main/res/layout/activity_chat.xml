@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Chat">
+
+    <ImageView
+        android:id="@+id/sbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/status_bar"
+        android:layout_alignParentTop="true"
+        >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/sbar"
+        android:weightSum="6"
+        android:background="#fafafa"
+        >
+
+        <!--cam-->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/backb"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/circleb"
+                android:backgroundTint="@color/theme"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:text="IS"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+        </RelativeLayout>
+
+
+
+        <!--Socially text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="internshala"
+            android:fontFamily="@font/red_hat"
+            android:textColor="@color/black"
+            android:layout_weight="1.9"
+            android:textSize="16sp"
+            android:paddingLeft="8dp"
+
+            />
+
+
+        <!--cam-->
+        <ImageView
+            android:id="@+id/vcall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/vid_cam"
+            android:padding="3dp"
+            android:clickable="true"
+            />
+
+        <!--share-->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/info"
+            android:scaleType="center"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/bbar"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@id/ll1"
+        android:orientation="vertical"
+        android:weightSum="5"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:text="4:49 PM"
+            android:textSize="15sp"
+            android:gravity="bottom|center"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            >
+            <ImageView
+                android:id="@+id/hello"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:paddingTop="25dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/circleb"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello"
+                android:textSize="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+
+                />
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/mbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            android:background="@drawable/msg_bar"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:weightSum="10"
+            >
+
+            <!--camera -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:layout_marginLeft="5dp"
+                >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/circleb"
+                android:scaleType="centerInside"
+                android:padding="3dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fcam"
+                app:tint="@color/white"
+                android:padding="10dp"
+                />
+            </RelativeLayout>
+
+
+            <!--message -->
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.7"
+                android:background="@android:color/transparent"
+                android:hint="Message..."
+                android:textColor="@color/black"
+                android:textColorHint="@color/from"
+                android:layout_marginLeft="5dp"
+                android:inputType="textMultiLine"/>
+
+            <!--mic-->
+            <ImageView
+                android:id="@+id/mic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/mic"
+                android:scaleType="center"
+                />
+
+            <ImageView
+                android:id="@+id/gal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/gal"
+                android:scaleType="center"/>
+
+            <ImageView
+                android:id="@+id/sticker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/sticker"
+                android:scaleType="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/bbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:elevation="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bottom_bar"/>
+
+</RelativeLayout>
