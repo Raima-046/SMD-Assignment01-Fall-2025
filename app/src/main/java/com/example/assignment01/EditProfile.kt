@@ -20,11 +20,13 @@ class EditProfile : AppCompatActivity() {
         cancel.setOnClickListener {
             var intent = Intent(this, Profile::class.java)
             startActivity(intent)
+            onBackPressed()
         }
 
         done.setOnClickListener {
             var intent = Intent(this, Profile::class.java)
             startActivity(intent)
+            onBackPressed()
         }
     }
 }

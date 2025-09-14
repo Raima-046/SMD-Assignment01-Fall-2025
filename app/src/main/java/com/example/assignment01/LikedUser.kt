@@ -24,28 +24,32 @@ class LikedUser : AppCompatActivity() {
         foll.setOnClickListener {
             var intent = Intent(this, LikesFollowing::class.java)
             startActivity(intent)
+            onBackPressed()
         }
 
         search.setOnClickListener {
             var intent = Intent(this, Feed::class.java)
             startActivity(intent)
+            onBackPressed()
         }
 
         post.setOnClickListener {
             var intent = Intent(this, CreatePost::class.java)
             startActivity(intent)
+            onBackPressed()
         }
 
         home.setOnClickListener {
             var intent = Intent(this, Homepage::class.java)
             startActivity(intent)
-            
+            onBackPressed()
+
         }
 
         prof.setOnClickListener {
             var intent = Intent(this, Profile::class.java)
             startActivity(intent)
-
+            onBackPressed()
         }
     }
 }

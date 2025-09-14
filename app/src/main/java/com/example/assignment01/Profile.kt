@@ -26,32 +26,33 @@ class Profile : AppCompatActivity() {
         search.setOnClickListener {
             var intent = Intent(this, Feed::class.java)
             startActivity(intent)
+            onBackPressed()
         }
 
         home.setOnClickListener {
             var intent = Intent(this, Homepage::class.java)
             startActivity(intent)
-            finish()
+            onBackPressed()
         }
 
         post.setOnClickListener {
             var intent = Intent(this, CreatePost::class.java)
             startActivity(intent)
+            onBackPressed()
         }
 
         likes.setOnClickListener {
             var intent = Intent(this, LikesFollowing::class.java)
             startActivity(intent)
+            onBackPressed()
         }
 
         editprof.setOnClickListener {
             var intent = Intent(this, EditProfile::class.java)
             startActivity(intent)
+            onBackPressed()
         }
 
-        fun onBackPressed() {
-            finish()   // Profile close hoga aur back stack me jo previous screen hai (Homepage) wo aa jayegi
-        }
     }
 
 
