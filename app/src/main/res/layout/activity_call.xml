@@ -48,6 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="03:12"
+            android:fontFamily="@font/inder_regular"
             android:textSize="23dp"
             android:textColor="@color/white"
             android:layout_below="@id/mom"
@@ -72,6 +73,7 @@
                 android:padding="28dp"
                 />
             <RelativeLayout
+                android:id="@+id/decline"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

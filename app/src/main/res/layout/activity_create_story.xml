@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Highlight">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        >
+
+        <ImageView
+            android:id="@+id/sbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wstatus_bar"
+            android:layout_alignParentTop="true"
+            >
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sbar"
+            android:layout_above="@id/bnav"
+            android:background="@drawable/rect_buttonw"
+            android:layout_margin="1dp"
+            >
+            <RelativeLayout
+                android:id="@+id/storyimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:id="@+id/hl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/createstr"
+                    android:background="@drawable/rect_buttonw"
+                    android:scaleType="center"
+                    android:clipToOutline="true"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:src="@drawable/gear"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.7"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        >
+
+
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/go"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:src="@drawable/back"
+                        app:tint="@color/white"
+                        android:rotation="180"
+                        android:padding="5dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    >
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/rect_buttonw"
+                            android:padding="15dp"
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/img_7"
+                            android:padding="18dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/flash"
+                        android:scaleType="fitXY"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/create"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/circleb"
+                        android:backgroundTint="@color/story_prog"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/circleb"
+                            app:tint="@color/white"
+                            android:padding="10dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:src="@drawable/rev"
+                        android:padding="10dp"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:src="@drawable/smiley"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/bnav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_above="@id/bbar"
+            android:weightSum="6"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TYPE"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="13dp"
+                android:textColor="@color/loginClicked"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="LIVE"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="13dp"
+                android:textColor="@color/loginClicked"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="NORMAL"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="13dp"
+                android:textColor="@color/theme"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:text="BOOMERANG"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:textSize="13dp"
+                android:textColor="@color/loginClicked"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SUPER"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="13dp"
+                android:singleLine="true"
+                android:textColor="@color/loginClicked"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:elevation="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bottom_bar"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

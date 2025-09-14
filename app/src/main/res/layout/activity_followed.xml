@@ -483,6 +483,7 @@
                         android:padding="3dp"
                         />
                     <ImageView
+                        android:id="@+id/hilite"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/seen_str"
@@ -770,6 +771,7 @@
             android:layout_marginBottom="15dp"
             >
             <ImageView
+                android:id="@+id/home"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -777,6 +779,7 @@
                 android:scaleType="center"
                 />
             <ImageView
+                android:id="@+id/feed"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -785,6 +788,7 @@
                 android:scaleType="center"
                 />
             <ImageView
+                android:id="@+id/upload"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -792,6 +796,7 @@
                 android:scaleType="center"
                 />
             <ImageView
+                android:id="@+id/likes"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

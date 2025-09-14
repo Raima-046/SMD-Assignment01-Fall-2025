@@ -12,6 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment01">
         <activity
+            android:name=".LikedUser"
+            android:exported="false" />
+        <activity
+            android:name=".LikesFollowing"
+            android:exported="false" />
+        <activity
+            android:name=".Feed"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".LikedStory"
+            android:exported="false" />
+        <activity
+            android:name=".CreateStory"
+            android:exported="false" />
+        <activity
+            android:name=".ViewOtherStory"
+            android:exported="false" />
+        <activity
             android:name=".EditStory"
             android:exported="false" />
         <activity
@@ -24,10 +45,10 @@
             android:name=".Follow"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".EditProfile"
             android:exported="false" />
         <activity
-            android:name=".Profile"
+            android:name=".CreatePost"
             android:exported="false" />
         <activity
             android:name=".Dms"
@@ -54,7 +75,7 @@
             android:name=".Createacc"
             android:exported="false" />
         <activity
-            android:name=".LikedStory"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

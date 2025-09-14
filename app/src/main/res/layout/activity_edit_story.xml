@@ -55,6 +55,7 @@
                     android:layout_marginRight="15dp"
                     >
                     <ImageView
+                        android:id="@+id/cancel"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -132,12 +133,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2.9"
                 >
-                <TextView
+                <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/msg_bar"
-                    android:padding="10dp"
-                    android:backgroundTint="@color/from"
+                    android:src="@drawable/story"
+                    android:scaleType="centerInside"
                     />
 
             </RelativeLayout>
@@ -147,10 +147,17 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2.9"
                 >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/closefriends"
+                    android:scaleType="centerInside"
+                    />
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/go"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1.1"

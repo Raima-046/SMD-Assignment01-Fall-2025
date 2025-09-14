@@ -13,7 +13,8 @@ class Login1 : AppCompatActivity() {
         setContentView(R.layout.activity_login1)
 
         var signup = findViewById<TextView>(R.id.tt5)
-        var login = findViewById<TextView>(R.id.btn)
+        var login = findViewById<TextView>(R.id.Loginbtn)
+        var switchacc = findViewById<TextView>(R.id.switchacc)
 
         signup.setOnClickListener{
             var intent = Intent(this, Createacc::class.java)
@@ -22,6 +23,12 @@ class Login1 : AppCompatActivity() {
 
         login.setOnClickListener{
             var intent = Intent(this, Homepage::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        switchacc.setOnClickListener {
+            var intent = Intent(this, Login2::class.java)
             startActivity(intent)
         }
 

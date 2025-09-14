@@ -19,6 +19,7 @@ class Searchpage : AppCompatActivity() {
         chat.setOnClickListener {
             var intent = Intent(this, Chat::class.java)
             startActivity(intent)
+            onBackPressed()
         }
     }
 }

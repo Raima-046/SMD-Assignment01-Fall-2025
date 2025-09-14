@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg"
     tools:context=".Follow">
 
     <RelativeLayout
@@ -493,6 +494,7 @@
                         android:padding="3dp"
                         />
                     <ImageView
+                        android:id="@+id/hilite"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/seen_str"
@@ -736,7 +738,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/posthl"
-                    android:scaleType="fitXY"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="1dp"
                     />
                 <ImageView
                     android:layout_width="20dp"
@@ -756,7 +759,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/post2"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:layout_margin="1dp"
                 />
             <ImageView
@@ -764,7 +767,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/post3"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:layout_margin="1dp"
                 />
 
@@ -780,6 +783,7 @@
             android:layout_marginBottom="15dp"
             >
             <ImageView
+                android:id="@+id/home"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -787,6 +791,7 @@
                 android:scaleType="center"
                 />
             <ImageView
+                android:id="@+id/feed"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -794,7 +799,9 @@
                 app:tint="@color/theme"
                 android:scaleType="center"
                 />
+
             <ImageView
+                android:id="@+id/upload"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -802,6 +809,7 @@
                 android:scaleType="center"
                 />
             <ImageView
+                android:id="@+id/likes"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

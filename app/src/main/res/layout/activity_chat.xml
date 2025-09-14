@@ -30,6 +30,7 @@
 
         <!--cam-->
         <ImageView
+            android:id="@+id/goback"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -68,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="internshala"
-            android:fontFamily="@font/red_hat"
+            android:fontFamily="@font/inder_regular"
             android:textColor="@color/black"
             android:layout_weight="1.9"
             android:textSize="16sp"
@@ -114,6 +115,7 @@
             android:layout_height="0dp"
             android:layout_weight="3.5"
             android:text="4:49 PM"
+            android:fontFamily="@font/inder_regular"
             android:textSize="15sp"
             android:gravity="bottom|center"
             />
@@ -140,6 +142,7 @@
                 android:layout_height="wrap_content"
                 android:text="Hello"
                 android:textSize="20dp"
+                android:fontFamily="@font/inder_regular"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:textColor="@color/white"
@@ -197,6 +200,7 @@
                 android:layout_weight="5.7"
                 android:background="@android:color/transparent"
                 android:hint="Message..."
+                android:fontFamily="@font/inder_regular"
                 android:textColor="@color/black"
                 android:textColorHint="@color/from"
                 android:layout_marginLeft="5dp"

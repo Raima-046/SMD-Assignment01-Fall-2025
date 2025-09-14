@@ -56,7 +56,7 @@
 
 
     <TextView
-        android:id="@+id/btn"
+        android:id="@+id/Loginbtn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/rect_button"
@@ -73,7 +73,7 @@
         android:clickable="true"/>
 
     <TextView
-        android:id="@+id/tt3"
+        android:id="@+id/switchacc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Switch accounts"
@@ -82,7 +82,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="27dp"
         android:textColor="@color/theme"
-        android:layout_below="@id/btn"
+        android:layout_below="@id/Loginbtn"
 
         />
 

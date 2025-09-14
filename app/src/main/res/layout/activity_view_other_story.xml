@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Highlight">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        >
+
+        <ImageView
+            android:id="@+id/sbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wstatus_bar"
+            android:layout_alignParentTop="true"
+            >
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sbar"
+            android:layout_above="@id/bnav"
+            android:background="@drawable/rect_buttonw"
+            android:layout_margin="1dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:id="@+id/hl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/craig_str"
+                    android:background="@drawable/rect_buttonw"
+                    android:scaleType="center"
+                    android:clipToOutline="true"
+
+                    />
+
+
+
+                <LinearLayout
+                    android:id="@+id/prog_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+
+                    >
+
+                    <View
+                        android:id="@+id/prog1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/white" />
+
+
+                    <View
+                        android:id="@+id/prog2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:layout_weight="1"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/prog3"
+                        android:layout_width="0dp"
+                        android:layout_height="4dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="65"
+                            android:background="#FFFFFF" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="35"
+                            android:background="@color/story_prog" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/prog4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/story_prog"
+                        android:layout_weight="1"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"/>
+
+                    <View
+                        android:id="@+id/prog5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/story_prog"
+                        android:layout_weight="1"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/prog_bar"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/kyankiprofile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:src="@drawable/craig"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.7"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="craig_love"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="4h"
+                            android:textColor="@color/from"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/goback"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:src="@drawable/plus"
+                        app:tint="@color/white"
+                        android:rotation="45"
+                        android:padding="5dp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/bnav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_above="@id/bbar"
+            android:weightSum="7"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="10dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="5.5"
+                android:orientation="horizontal"
+                android:background="@drawable/story_msgbar"
+                android:layout_marginTop="8dp"
+                android:weightSum="6"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circleb"
+                        android:backgroundTint="@color/story_prog"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fcam"
+                        android:padding="10dp"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:text="Send Message"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/theme"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:src="@drawable/share"
+                    app:tint="@color/follow_btn"
+                    android:padding="8dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:src="@drawable/more"
+                    app:tint="@color/follow_btn"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:elevation="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bottom_bar"
+            app:tint="@color/follow_btn"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

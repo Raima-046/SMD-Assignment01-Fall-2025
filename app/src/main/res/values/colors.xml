@@ -10,7 +10,8 @@
     <color name="loginUnClicked">#d19f9e</color>
     <color name="msgbar">#f3f3f3</color>
     <color name="call">#f90405</color>
-    <color name="search">#1087d9</color>
+    <color name="link">#26306D</color>
+    <color name="search">#1087D9</color>
     <color name="bg">#fafafa</color>
     <color name="outline">#c6ccc8</color>
     <color name="follow">#f8f8f8</color>
