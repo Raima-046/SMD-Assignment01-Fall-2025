@@ -67,7 +67,6 @@ class Homepage : AppCompatActivity() {
         story.setOnClickListener {
             var intent = Intent(this, CreateStory::class.java)
             startActivity(intent)
-            onBackPressed()
         }
 
         viewstr.setOnClickListener {
