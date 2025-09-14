@@ -1,4 +1,4 @@
-package com.example.assignment01
+package com.raimatariq.i221145
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Followed : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

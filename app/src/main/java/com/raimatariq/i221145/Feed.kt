@@ -1,36 +1,28 @@
-package com.example.assignment01
+package com.raimatariq.i221145
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.EditText
 import android.widget.ImageView
-import android.widget.RelativeLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class LikedUser : AppCompatActivity() {
+class Feed : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_liked_user)
+        setContentView(R.layout.activity_feed)
 
-        var foll = findViewById<RelativeLayout>(R.id.foll)
-        var search = findViewById<ImageView>(R.id.feed)
+        var search = findViewById<EditText>(R.id.search)
         var post = findViewById<ImageView>(R.id.upload)
         var home = findViewById<ImageView>(R.id.home)
+        var likes = findViewById<ImageView>(R.id.likes)
         var prof = findViewById<de.hdodenhof.circleimageview.CircleImageView>(R.id.userpf)
 
-        foll.setOnClickListener {
-            var intent = Intent(this, LikesFollowing::class.java)
-            startActivity(intent)
-            onBackPressed()
-        }
-
         search.setOnClickListener {
-            var intent = Intent(this, Feed::class.java)
+            var intent = Intent(this, Searchpage::class.java)
             startActivity(intent)
-            onBackPressed()
+            finish()
         }
 
         post.setOnClickListener {
@@ -42,8 +34,13 @@ class LikedUser : AppCompatActivity() {
         home.setOnClickListener {
             var intent = Intent(this, Homepage::class.java)
             startActivity(intent)
-            onBackPressed()
+            onBackPressed() //profile del ho jaye from stack or khali homepage display ho
+        }
 
+        likes.setOnClickListener {
+            var intent = Intent(this, LikesFollowing::class.java)
+            startActivity(intent)
+            onBackPressed()
         }
 
         prof.setOnClickListener {
